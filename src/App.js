@@ -9,13 +9,12 @@ function Timer() {
       setSeconds((prevSeconds) => prevSeconds + 1);
     }, 1000);
 
-   
     return () => clearInterval(intervalId);
   }, []); // Empty array as dependency means the effect runs once on mount
 
   return (
     <div>
-      <h1>Time: {seconds}s</h1>
+      <h1>TIMER: {seconds}s</h1>
     </div>
   );
 }
