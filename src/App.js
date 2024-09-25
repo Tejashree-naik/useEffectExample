@@ -9,7 +9,7 @@ function Timer() {
       setSeconds((prevSeconds) => prevSeconds + 1);
     }, 1000);
 
-    // Cleanup function to clear the interval when the component unmounts
+   
     return () => clearInterval(intervalId);
   }, []); // Empty array as dependency means the effect runs once on mount
 
